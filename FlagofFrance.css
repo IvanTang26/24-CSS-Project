@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+:root {
+    --red: #ED2938;
+    --white: #FFF;
+    --blue: #002495;
+    --flag-height: 150px;
+}
+
+.flag-france {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 3/2);
+    margin: 2em auto;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .stripe {
+    flex-grow: 1;
+} */
+
+.red {
+    background: var(--red);
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.white {
+    background: var(--white);
+}

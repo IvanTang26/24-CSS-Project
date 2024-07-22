@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #0269A6;
+    --yellow: #FECC00;
+    --flag-height: 150px;
+    --flag-width: calc(var(--flag-height) * 8/5);
+} 
+
+.flag-sweden {
+    height: var(--flag-height);
+    width: var(--flag-width);
+    background: var(--blue);
+    display: flex;
+    margin: 2em auto;
+    position: relative;
+}
+
+.stripe {
+    background: var(--yellow);
+    height: calc(var(--flag-height) * 1/5);
+}
+
+.stripe-yellow {
+    align-self: center;
+    width: 100%;
+}
+
+.stripe-yellow2 {
+    width: var(--flag-height);
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(var(--flag-height) * 4/10);
+    right: calc(var(--flag-width) * 5/16);
+}

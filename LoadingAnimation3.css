@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+} 
+  
+:root {
+    --spinner: #f3f3f3;
+    --spinner-active: purple;
+}
+  
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 1em solid var(--spinner);
+    border-radius: 50%;
+    border-top: 1em solid var(--spinner-active);
+    animation: spin 1.5s linear infinite;
+}
+  
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

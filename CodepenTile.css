@@ -1,0 +1,95 @@
+/* Colors 
+body background: #131417
+tile background: #1e1f26 
+username: #b7bbc8
+card stats background: #131417
+*/
+
+:root {
+    --font-main: 'Noto Sans', sans-serif;
+    --bg-main: #131417;
+    --bg-card: #1e1f26;
+    --bg-stats: #131417;
+    --username: #b7bbc8;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: var(--bg-main);
+    font-family: var(--font-main);
+}
+
+p, h3 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.card, img {
+    border-radius: 10px;
+}
+
+.card {
+    max-width: 300px;
+    background: var(--bg-card);
+    margin: auto;
+    padding: 1em;
+}
+
+.card-thumbnail img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    display: flex;
+    margin-top: 1em;
+
+}
+.card-avatar img {
+    height: 50px;
+    width: 50px;
+    margin-right: 1em;
+}
+.card-details {
+    line-height: 1.5;
+}
+.card-details h3 {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.card-detail p {
+    font-size: .85rem;
+    color: var(--username);
+}
+
+.card-stats {
+    display: none;
+    padding-bottom: .5em;
+}
+
+.card-stats li {
+    background: var(--bg-stats);
+    padding: .25em .5em;
+    margin-right: .5em;
+    border-radius: 5px;
+}
+
+.card:hover .card-stats {
+    display: flex;
+}
+
+.card:hover {
+    padding-bottom: 0;
+}
